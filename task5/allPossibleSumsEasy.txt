@@ -1,0 +1,7 @@
+a = [-1, 2, 1, 4]
+a.sort()
+sm = 0
+for i in range(len(a)):
+    if a[i] > 0:
+        sm += a[i]
+print(sm)

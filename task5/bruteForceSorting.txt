@@ -1,0 +1,13 @@
+a = [] #1
+n = int(input('Enter N: ')) #2
+for i in range(n): #n
+    a.append(int(input())) #1
+b = [] #1
+for i in range(n): #4n**2 + 2n
+    mn = 1000000 #1
+    for j in range(n): #4n
+        if mn > a[j] and a[j] not in b: #3
+            mn = a[j] #1
+    b.append(mn) #1
+print(b)#1
+#4n**2 + 3n + 5             O(n**2 + n)

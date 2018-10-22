@@ -1,0 +1,10 @@
+a = [1, 5, -7, 2]
+n = len(a)
+mx = -1
+for i in range(n):
+    sm = 0
+    for j in range(i, n): 
+        sm += a[j]
+    mx = max(sm, mx)
+print(mx)
+n * (n + 1) / 2 + 2n + 4
